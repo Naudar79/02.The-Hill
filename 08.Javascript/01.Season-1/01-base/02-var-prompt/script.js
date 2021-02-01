@@ -1,4 +1,3 @@
-
 // 01-base/02-var-prompt/script.js - 1.2: var & prompt
 
 (() => {
@@ -9,3 +8,5 @@
     // YOUR CODE HERE
 })();
 
+let name = prompt("Enter your name");
+window.alert("Hello " + name + " !");
