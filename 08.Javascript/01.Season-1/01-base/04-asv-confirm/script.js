@@ -1,4 +1,3 @@
-
 // 01-base/04-asv-confirm/script.js - 1.4: ASV avec confirmation
 
 (() => {
@@ -8,3 +7,13 @@
 
     // YOUR CODE HERE
 })();
+
+let age = prompt("Enter your age: ");
+let sex = prompt("Enter your sex: ");
+let city = prompt("Enter your city: ");
+
+if (confirm("Age: " + age + " | Sex: " + sex + " | City: " + city + " | Confirm your entries: ") != true) {
+    age = prompt("Enter your age: ");
+    sex = prompt("Enter your sex: ");
+    city = prompt("Enter your city: ");
+}
