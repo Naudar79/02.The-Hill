@@ -5,7 +5,7 @@
         let val = "0123456789ABCDEF";
         let col = "#";
         for (index = 0; index < 6; index++) {
-            col += val[Math.floor(Math.Random() * 16)];
+            col += val[Math.floor(Math.random() * 16)];
         }
         return document.body.style.background = col;
     });

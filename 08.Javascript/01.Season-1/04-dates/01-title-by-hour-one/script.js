@@ -8,7 +8,7 @@
     // your code here
 
     let now = new Date();
-    let hr = now.gethours();
+    let hr = now.getHours();
     if (hr < 18) {
         document.getElementById("target").innerHTML = "Hello";
     } else {
