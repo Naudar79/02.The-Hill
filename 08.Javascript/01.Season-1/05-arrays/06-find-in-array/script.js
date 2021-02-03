@@ -2,8 +2,7 @@
 
 (() => {
 
-    let people = [
-        {
+    let people = [{
             firstname: "Bradford",
             lastname: "Coldbath",
             email: "bcoldbath0@wired.com",
@@ -81,5 +80,15 @@
     ];
 
     // your code here
+
+    // créer le script pour le bouton
+    document.getElementById("run").addEventListener("click", () => {
+
+        people.forEach(element => {
+            if (element.lastname == "Dupont" && element.firstname == "Jean") {
+                alert("Le mail de Jean Dupont est: " + element.email + " et il a l'index: " + people.indexOf(element));
+            }
+        });
+    });
 
 })();
