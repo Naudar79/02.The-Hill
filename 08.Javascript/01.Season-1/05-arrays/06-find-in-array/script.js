@@ -86,7 +86,7 @@
 
         people.forEach(element => {
             if (element.lastname == "Dupont" && element.firstname == "Jean") {
-                alert("Le mail de Jean Dupont est: " + element.email + " et il a l'index: " + people.indexOf(element));
+                console.log("Le mail de Jean Dupont est: " + element.email + " et il a l'index: " + people.indexOf(element));
             }
         });
     });
