@@ -3,8 +3,7 @@
 
 (() => {
 
-    let people = [
-        {
+    let people = [{
             firstname: "Grenville",
             lastname: "Stive",
             age: 64,
@@ -83,4 +82,11 @@
 
     // your code here
 
+    document.getElementById("run").addEventListener("click", () => {
+        totAge = [];
+        people.forEach((element) => {
+            totAge.push(element.age);
+        });
+        console.log(totAge.reduce((a, b) => a + b, 0));
+    });
 })();
