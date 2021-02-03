@@ -10,9 +10,9 @@
         let annee = document.getElementById("dob-year").value;
         let mois = document.getElementById("dob-month").value;
         let jour = document.getElementById("dob-day").value;
-
         let dateJ = new Date();
         let age = dateJ.getFullYear() - annee;
+
         if (mois > dateJ.getMonth() + 1) {
             age = age - 1;
         } else if (mois < dateJ.getMonth() + 1) {
