@@ -2,8 +2,7 @@
 
 (() => {
 
-    const people = [
-        {
+    const people = [{
             firstname: "Dreddy",
             lastname: "Nussgen",
             age: 70,
@@ -81,5 +80,20 @@
     ];
 
     // your code here
+    let majeur = [];
+    document.getElementById("run").addEventListener("click", () => {
 
+        people.forEach(element => {
+            if (element.age >= 18) {
+                majeur.push(element);
+            }
+        });
+        console.log(majeur);
+    });
+
+    // parcourir la table et chercher les personnes de plus de 18 ans
+
+    // enregistrer les personnes correspondantes à la condition dans une nouvelle table
+
+    // afficher la liste des personnes dans la console
 })();
