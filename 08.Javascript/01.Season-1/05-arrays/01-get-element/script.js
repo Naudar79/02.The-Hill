@@ -19,4 +19,7 @@
 
     // your code here
 
+    document.getElementById("run").addEventListener("click", () => {
+        return alert(fruits[3]);
+    });
 })();
