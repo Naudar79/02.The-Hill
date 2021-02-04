@@ -15,4 +15,12 @@
     ]);
 
     // your code here
+    document.getElementById("run").addEventListener("click", () => {
+        //Parcourir le "set" et relevé son dernier index
+        console.log("Longueur: " + people.size);
+        //tester si "Alexandre" est dans le set
+        if (people.has('Alexandre') == true) {
+            console.log("Alexandre is into the Set");
+        }
+    });
 })();
