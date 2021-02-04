@@ -5,4 +5,12 @@
     const keys = ["name", "species", "age", "gender", "color"];
     const values = ["Skitty", "cat", 9, "female", "tabby"];
     // your code here
+    document.getElementById("run").addEventListener("click", () => {
+        let array = [];
+        keys.forEach((newK, index) => {
+            array.push([newK, values[index]]);
+        });
+        let result = Object.fromEntries(array);
+        console.log(result);
+    });
 })();
