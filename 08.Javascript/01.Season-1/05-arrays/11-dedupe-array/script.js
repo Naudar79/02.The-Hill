@@ -21,5 +21,8 @@
     ];
 
     // your code here
-
+    document.getElementById("run").addEventListener("click", () => {
+        let unique = fruits.filter((val, index) => fruits.indexOf(val) === index);
+        console.log(unique);
+    });
 })();
