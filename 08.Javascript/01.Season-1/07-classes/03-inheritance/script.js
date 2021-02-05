@@ -35,3 +35,9 @@
         console.log(theDog.greeting());
     });
 })();
+
+// *********************************************************************
+// * 7.3 - créer deux classes avec deux propriétés dont une statique.  *
+// * au clique, créer une instance pour chaque classe renvoyant la     *
+// * valeur de la méthode sayHello dans la console                     *
+// *********************************************************************
