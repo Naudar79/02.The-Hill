@@ -8,4 +8,30 @@
         }
     }
     // your code here
+    class Cat extends Animal {
+        constructor(name) {
+            super(name);
+            this.name = name;
+        }
+        static greeting = "Miaou";
+        greeting() {
+            return super.sayHello();
+        }
+    }
+    class Dog extends Animal {
+        constructor(name) {
+            super(name);
+            this.name = name;
+        }
+        static greeting = "Wouf";
+        greeting() {
+            return super.sayHello();
+        }
+    }
+    document.getElementById("run").addEventListener("click", () => {
+        let theCat = new Cat("Leo");
+        let theDog = new Dog("Qoffee");
+        console.log(theCat.greeting());
+        console.log(theDog.greeting());
+    });
 })();
