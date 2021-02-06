@@ -4,5 +4,8 @@
 (() => {
 
     // your code here
-
+    let value = document.getElementById("source").dataset.image;
+    let img = document.createElement("img");
+    img.src = value;
+    document.getElementById("target").appendChild(img);
 })();
