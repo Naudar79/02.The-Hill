@@ -4,5 +4,5 @@
 (() => {
 
     // your code here
-    document.getElementsByClassName("material")[0].innerHTML = '<p>Owned</p>';
+    document.getElementsByClassName("material")[0].innerHTML = 'Owned';
 })();
